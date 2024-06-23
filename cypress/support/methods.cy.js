@@ -1,5 +1,10 @@
 class Methods
 {
+
+    getWebsiteURL(){
+        return cy.visit()
+    }
+
     getDropdown(){
         return cy.get('#dropdown-class-example')
     }

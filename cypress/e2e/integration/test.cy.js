@@ -9,19 +9,19 @@ describe('Testcases for Dropdown options', () => {
     const methods = new Methods()
 
     it('Click on Dropdown Option 1', () => {
-        cy.visit()
+        getWebsiteURL()
         methods.getDropdown().click()
         methods.getDropdown_Option1().click()
     })
     
     it('Click on Dropdown Option 2', () => {
-        cy.visit()
+        getWebsiteURL()
         methods.getDropdown().click()
         methods.getDropdown_Option2().click()
     })
 
     it('Click on Dropdown Option 3', () => {
-        cy.visit()
+        getWebsiteURL()
         methods.getDropdown().click()
         methods.getDropdown_Option2().click()
     })
@@ -34,7 +34,7 @@ describe('Testcase to upload image', () => {
 
     it('Upload image', () => {
     
-        cy.visit()
+        getWebsiteURL()
         methods.getUpload_Image().selectFile("C:\\Users\\Aman\\Cypress\\images.jpg")
     })
 })
@@ -45,7 +45,7 @@ describe('Testcase to open new tab', () => {
 
     it('Open New Tab', () => {
     
-        cy.visit()
+        getWebsiteURL()
         methods.getRemoveAttribute().click()
     })
 
@@ -57,7 +57,7 @@ describe('Testcase for Alert and Confirm button', () => {
 
     it('Alert button', () => {
     
-        cy.visit()
+        getWebsiteURL()
         methods.getAlert_TextBox().type('EasyGenerator')
         methods.getAlert_Button().click()
         methods.getConfirm_Button().click()
@@ -82,14 +82,14 @@ describe('Testcases to show/hide the input', () => {
 
     it('Hide the input', () => {
     
-        cy.visit()
+        getWebsiteURL()
         methods.getShowHide_TextBox().type('EasyGenerator')
         methods.getHide_Button().click()
     })
 
     it('Show the input', () => {
     
-        cy.visit()
+        getWebsiteURL()
         methods.getShowHide_TextBox().type('EasyGenerator')
         methods.getShow_Button().click()
     })
@@ -101,7 +101,7 @@ describe('Testcases for Mouse hover', () => {
 
     it('Mouse hover Top', () => {
     
-        cy.visit()
+        getWebsiteURL()
         methods.getMouseHover1().trigger('mouseover') //This is one approach to mouse hover
         methods.getMouseHover2().invoke('show') //This is another approach to mouse hover
         methods.getMouseHover_Top().click()
@@ -110,7 +110,7 @@ describe('Testcases for Mouse hover', () => {
 
     it('Mouse hover Reload', () => {
     
-        cy.visit()
+        getWebsiteURL()
         methods.getMouseHover1().trigger('mouseover') //This is one approach to mouse hover
         methods.getMouseHover2().invoke('show') //This is another approach to mouse hover
         methods.getMouseHover_Reload().click()
@@ -124,7 +124,7 @@ describe('Testcase for iFrame', () => {
 
 it('iFrame Element', () => {
     
-        cy.visit()
+        getWebsiteURL()
         methods.getIFrameElement()
     })
 })
